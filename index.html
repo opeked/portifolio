@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZeninMVP - Certificados</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Partículas -->
+  <div id="tsparticles"></div>
+
+  <!-- Conteúdo -->
+  <div class="container">
+    <h1 class="logo">ZeninMVP</h1>
+    <h2>Certificados de Conclusão</h2>
+    
+    <div class="certificados">
+      <img src="imagens/certificado1.png" alt="Certificado Desenvolvimento de Games" />
+      <img src="imagens/certificado2.png" alt="Certificado Desenvolvimento de Games 3D - Módulo I" />
+      <img src="imagens/certificado3.png" alt="Certificado Desenvolvimento de Games 3D - Módulo II" />
+    </div>
+  </div>
+
+  <!-- Script Partículas -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true },
+      background: { color: "#ffffff" },
+      particles: {
+        color: { value: "#007BFF" },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          outModes: { default: "out" }
+        },
+        number: {
+          value: 60,
+          density: { enable: true, area: 800 }
+        },
+        shape: { type: "circle" },
+        size: { value: 3 },
+        opacity: { value: 0.6 }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
